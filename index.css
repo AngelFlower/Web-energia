@@ -1,0 +1,58 @@
+.descripcion{
+	font-size: 18px;
+}
+
+.fondo-barra{
+	background-color: #273445;
+}
+.titulo-carousel{
+	font-size: 10vh;
+	text-shadow: 0px 1px 2px rgba(2,2,2,.5);
+}
+.carousel-item {
+  	height: 100vh;
+  	background-color: #9bdb4d;
+}
+.carousel-item:nth-child(1) {
+    background: #64baff;
+}
+
+.carousel-item:nth-child(2) {
+    background: #f9c440;
+}
+
+.carousel-item:nth-child(3) {
+    background: #a56de2;
+}
+.carousel-caption {
+    top: 35%;
+    bottom: auto;
+}
+.lead{
+	font-size: 5vh;
+	text-shadow: 0px 1px 1px rgba(2,2,2,0.4);
+}
+.col-sm{
+	padding: 5px;
+}
+.col-sm:nth-child(1) .card {
+  background-color: #ed5353;
+}
+.col-sm:nth-child(2) .card {
+  background-color: #f37329;
+}
+.col-sm:nth-child(3) .card {
+  background-color: #667885;
+}
+.cardt{
+	text-shadow: 0px 1px 4px rgba(2,2,2,0.2);
+}
+.color-footer{
+	background: #3689e6;
+}
+.color-footer-end{
+	background: #0d52bf;
+}
+.links > li > a {
+	color: white;
+}
