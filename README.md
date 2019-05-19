@@ -19,12 +19,12 @@ Solo se requiere tener un editor de texto y git para clonar el resositorio.
 Visual Studio Code
 ```
 ```
-Netbeans IDE 8.2
+Git
 ```
 ## Autores
 
-* **Angel Flores** - *Dsarrollador* - [AngelFlower](https://github.com/AngelFlower/)
+* **Angel Flores** - *Desarrollador* - [AngelFlower](https://github.com/AngelFlower/)
 
 ## Descargas
 
-Solo hace falta descargar como zip o clonar el repositorio con git a tu pc.
+Puedes descargar como zip dando [click aqui] (https://github.com/AngelFlower/Web-energia/archive/master.zip)
