@@ -34,26 +34,94 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col card">
-                <form class="card-body">
+            <div class="col-md">
+                <div class="card">
+                <div class="card-header"><h3>Contactanos</h3></div>
+                <form class="card-body" name="contact-form">
                     <div class="form-group">
-                    <label for="InputEmail1">Correo Electronico</label>
-                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <label for="InputEmail">Correo Electronico</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingresa tu correo" name="email" required>
+                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con alguien más</small>
+                    </div>
+                    <div class="row form-group">
+                        <div class="form-group col pr-1">
+                            <label for="InputName">Nombre</label>
+                            <input type="text" name="name" class="form-control" id="InputName" placeholder="Nombre" maxlength="25" required>
+                        </div>
+                        <div class="form-group col pl-1">
+                            <label for="InputLastName">Apellido</label>
+                            <input type="text" class="form-control" id="InputLastName" placeholder="Apellido" maxlength="25" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="InputSubject">Asunto</label>
+                        <input type="text" name="subject" class="form-control" id="InputSubject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDescription">Descripción</label>
+                        <textarea class="form-control" id="InputDescription" rows="6" placeholder="Descripción" minlength="30" required></textarea>
                     </div>
                     <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <input type="checkbox" class="form-check-input" id="Check" required>
+                        <label class="form-check-label" for="Check" >Deseo recibir noticias</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="contactBtn" onclick="send_form()">Enviar</button>
                 </form>
             </div>
-            <div class="col">
+        </div>
+            <div class="col-md">
+                <a href="index.html">
+                <img class="card-img" src="img/contactanos.png">
+                </a>
+            </div>
         </div>
     </div>
+    <a name="acerca-de"></a>
+	<footer class="page-footer font-small color-footer text-white pt-4">
+    <div class="container-fluid text-left text-md-left">
+      <div class="row">
+        <div class="col-md-6 pl-5">
+          <h5>CECyTEM Xonacatlán - Energía Eolíca</h5>
+          <h5>Integrantes:</h5>
+          <ul class="list-unstyled">
+          	<li>Angel Flores Carlos</li>
+          	<li>Christian Yael Mejía Galindo</li>
+          	<li>Hector Gutierrez Gutierrrez</li>
+          	<li>Adolfo Angel</li>
+          	<li>Edgar David</li>
+          </ul>
+        </div>
+        <div class="col-md-6 pl-5">
+            <h5>Referencias</h5>
+            <ul class="list-unstyled links">
+              <li>
+                <a href="http://www.edualter.org/material/consumo/energia4_1.htm">www.edualter.org</a>
+              </li>
+              <li>
+                <a href="http://eeolicacsj.blogspot.com/p/caracteristicas-de-la-energia-eolica.html">eeolicacsj.blogspot.com</a>
+              </li>
+              <li>
+                <a href="http://www.sustentator.com/blog-es/2010/02/como-funciona-un-generador-eolico/">www.sustentator.com</a>
+              </li>
+              <li>
+                <a href="https://getbootstrap.com">getbootstrap.com</a>
+              </li>
+              <li>
+              	<br>
+              	<a href="#inicio" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
+				Volver arriba
+			</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3 color-footer-end">© 2019 Copyright:
+      <a href="http://cecytem.edomex.gob.mx/" class="text-white text-sub"><u>CECYTEM.com<u></a>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="contacto.js"></script>
 </body>
 </html>

@@ -16,5 +16,23 @@
     bottom: auto;
 }
 .container {
-    margin-top: 3em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.color-footer{
+	background: #3689e6;
+}
+.color-footer-end{
+	background: #0d52bf;
+}
+.links > li > a {
+	color: white;
+}
+.card-img{
+	width: 100%;
+	height: auto;
+	border-radius: 0;
+}
+.card-img:hover{
+	filter: brightness(0.9)
 }
