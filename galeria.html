@@ -4,12 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Galeria - Energía Eolíca</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- Fluent Design Bootstrap -->
+	<link rel="stylesheet" href="./css/fluent.css">
+	<!-- Micon icons-->
+	<link rel="stylesheet" href="./css/micon.min.css">
+	<!--Custom style -->
 	<link rel="stylesheet" href="galeria.css">
 	<link rel="icon" href="img/favicon.png">
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark fondo-barra sombra-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
 	  <a class="navbar-brand" href="#">Cecytem</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -24,13 +30,11 @@
 	  </div>
 	</nav>
 	<a name="inicio"></a>
-	    <div class="text-center titulo-galeria">
-	            <div class="align-middle carousel-caption">
-	                <h1 class="titulo-carousel">Galería</h1>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+	<div class="row p-0 m-0">
+      <div class="col p-t-100 m-0">
+          <h1 class="display-3 text-center title-page">Galeria</h1>
+      </div>
+    </div>
 	<div class="container">
 		<br>
 		<div class="row">	
@@ -75,8 +79,8 @@
 		<div class="row">
 			<div class="col-12 p-0 text-center">
 				<h5 class="card-header bg-dark text-white">Asi suena un aerogenerador
-				<span class="badge badge-light">Audio</span></h5>
-				<div class="card-body" style="background: #485a6c">
+				<span class="badge badge-info">Audio</span></h5>
+				<div class="card-body" style="background: #515C6B ">
 				<audio controls>
 					<source src="audio/SonidoAero.mp3" type="audio/mp3">
 				</audio>  
@@ -86,7 +90,7 @@
 		<p></p>
 	</div>
 	<a name="acerca-de"></a>
-	<footer class="page-footer font-small color-footer text-white pt-4">
+	<footer class="page-footer font-small color-footer pt-4">
     <div class="container-fluid text-left text-md-left">
       <div class="row">
         <div class="col-md-6 pl-5">
@@ -117,7 +121,7 @@
               </li>
               <li>
               	<br>
-              	<a href="#inicio" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
+              	<a href="#inicio" class="btn btn-primary btn-lg" role="button" aria-pressed="true">
 				Volver arriba
 			</a>
               </li>
@@ -125,8 +129,8 @@
           </div>
       </div>
     </div>
-    <div class="footer-copyright text-center py-3 color-footer-end">© 2019 Copyright:
-      <a href="http://cecytem.edomex.gob.mx/" class="text-white text-sub"><u>CECYTEM.com<u></a>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="http://cecytem.edomex.gob.mx/" class="text-sub"><u>CECYTEM.com<u></a>
     </div>
 </footer>
 	<script src="js/popper.min.js"></script>

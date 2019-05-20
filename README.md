@@ -1,6 +1,6 @@
 # Energía eolíca
 
-Una página WEB desarrollada con html, css y bootstrap sobre la energía eolíca.
+Una página WEB desarrollada con html, css y bootstrap Fluent Desing sobre la energía eolíca.
 
 ## Capturas de pantalla
 ![Error](screenshots/index.png?raw=true "Inicio")

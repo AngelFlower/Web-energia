@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Fluent Design Bootstrap -->
+    <link rel="stylesheet" href="./css/fluent.css">
+    <!-- Micon icons-->
+    <link rel="stylesheet" href="./css/micon.min.css">
+    <!--Custom style -->
     <link rel="stylesheet" href="contacto.css">
     <title>Contacto</title>
     <link rel="icon" href="img/favicon.png">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fondo-barra">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Cecytem</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,12 +32,10 @@
         </div>
       </nav>
       <a name="inicio"></a>
-	    <div class="text-center titulo-contacto">
-	            <div class="align-middle carousel-caption">
-	                <h1 class="titulo-carousel">Contacto</h1>
-	            </div>
-	        </div>
-	    </div>
+    <div class="row p-0 m-0">
+      <div class="col p-t-100 m-0">
+          <h1 class="display-3 text-center title-page">Contacto</h1>
+      </div>
     </div>
     <div class="container">
         <div class="row">
@@ -66,18 +71,19 @@
                         <label class="form-check-label" for="Check" >Deseo recibir noticias</label>
                     </div>
                     <button type="submit" class="btn btn-primary" id="contactBtn" onclick="send_form()">Enviar</button>
+
                 </form>
             </div>
         </div>
             <div class="col-md">
                 <a href="index.html">
-                <img class="card-img" src="img/contactanos.png">
+                <img class="card card-img" src="img/contactanos.png">
                 </a>
             </div>
         </div>
     </div>
     <a name="acerca-de"></a>
-	<footer class="page-footer font-small color-footer text-white pt-4">
+	<footer class="page-footer font-small color-footer pt-4">
     <div class="container-fluid text-left text-md-left">
       <div class="row">
         <div class="col-md-6 pl-5">
@@ -108,20 +114,22 @@
               </li>
               <li>
               	<br>
-              	<a href="#inicio" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
-				Volver arriba
-			</a>
+              	<a href="#inicio" class="btn btn-primary btn-lg" role="button" aria-pressed="true">
+				          Volver arriba
+			          </a>
               </li>
             </ul>
           </div>
       </div>
     </div>
-    <div class="footer-copyright text-center py-3 color-footer-end">© 2019 Copyright:
-      <a href="http://cecytem.edomex.gob.mx/" class="text-white text-sub"><u>CECYTEM.com<u></a>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="http://cecytem.edomex.gob.mx/" class="text-sub"><u>CECYTEM.com<u></a>
     </div>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="contacto.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type=="text/javascript" src="contacto.js"></script>
 </body>
 </html>
