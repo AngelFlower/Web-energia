@@ -42,10 +42,11 @@
             <div class="col-md">
                 <div class="card">
                 <div class="card-header"><h3>Contactanos</h3></div>
-                <form class="card-body" name="contact-form">
+                <form class="card-body" name="contact-form" action="registra.php" method="POST" >
                     <div class="form-group">
                     <label for="InputEmail">Correo Electronico</label>
-                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingresa tu correo" name="email" required>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingresa tu correo" name="email" 
+                        v-model="Vemail" required>
                         <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con alguien más</small>
                     </div>
                     <div class="row form-group">
@@ -55,7 +56,7 @@
                         </div>
                         <div class="form-group col pl-1">
                             <label for="InputLastName">Apellido</label>
-                            <input type="text" class="form-control" id="InputLastName" placeholder="Apellido" maxlength="25" required>
+                            <input type="text" class="form-control" name="lastname" id="InputLastName" placeholder="Apellido" maxlength="25" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -64,15 +65,16 @@
                     </div>
                     <div class="form-group">
                         <label for="InputDescription">Descripción</label>
-                        <textarea class="form-control" id="InputDescription" rows="6" placeholder="Descripción" minlength="30" required></textarea>
+                        <textarea class="form-control" id="InputDescription" rows="6" placeholder="Descripción" minlength="30" name="description"  required></textarea>
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="Check" required>
                         <label class="form-check-label" for="Check" >Deseo recibir noticias</label>
+                        <input id="_token" type="hidden" name="_token" >
                     </div>
-                    <button type="submit" class="btn btn-primary" id="contactBtn" onclick="send_form()">Enviar</button>
-
+                    <button type="submit" class="btn btn-primary" id="contactBtn">Enviar</button>
                 </form>
+                
             </div>
         </div>
             <div class="col-md">
@@ -130,6 +132,8 @@
   <script type="text/javascript" src="../js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/vue.js"></script>
   <script type="text/javascript" src="../js/contacto.js"></script>
+  
 </body>
 </html>
