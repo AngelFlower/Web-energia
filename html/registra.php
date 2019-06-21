@@ -2,7 +2,7 @@
 
 <head>    
 	<title>Guardamos los datos en la base de datos</title>
-	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>    
 
 <body>    
@@ -35,7 +35,7 @@ echo "
 	<div class='row card h-100'>
 		<div class='card-body text-center form-control' style='padding-top:16rem;'>
 		<h2 class='display-5 pb-3'>Los datos han sido guardados con exito.</h2>    
-		<p><a href='energiaeolica.tk' class='btn btn-primary'>Volver al inicio</a></p>
+		<p><a href='http://energiaeolica.tk' class='btn btn-primary'>Volver al inicio</a></p>
 		</div>
 	</div>
 </div>
