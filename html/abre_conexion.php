@@ -22,7 +22,8 @@ $conexion_db = mysqli_connect("$hotsdb","$usuariodb","$clavedb")
 
 */
 
-$mysqli = new mysqli("localhost","root","","ejemplo");
+//$mysqli = new mysqli("localhost","root","unacuentabineada","id10030162_web");
+$mysqli = new mysqli("remotemysql.com","fiw24bP3O7","D1n3U3HN1E","fiw24bP3O7");
 
 if($mysqli -> connect_errno){
 	echo "Falló al conectar a Mysql: (". $mysqli->connect_errno . ")". $mysqli->connect_error;
@@ -30,4 +31,4 @@ if($mysqli -> connect_errno){
 }
 echo $mysqli->host_info ."\n";
 
-?> 
+?>

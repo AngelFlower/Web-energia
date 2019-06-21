@@ -1,7 +1,8 @@
 <html>    
 
 <head>    
-<title>Guardamos los datos en la base de datos</title>    
+	<title>Guardamos los datos en la base de datos</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
 </head>    
 
 <body>    
@@ -29,12 +30,19 @@ include("cierra_conexion.php");
 
 // Confirmamos que el registro ha sido insertado con exito    
 
-echo "    
-<p>Los datos han sido guardados con exito.</p>    
-
-<p><a href='javascript:history.go(-1)'>VOLVER ATRÁS</a></p>    
-";    
+echo "
+<div class='container'>    
+	<div class='row card h-100'>
+		<div class='card-body text-center form-control' style='padding-top:16rem;'>
+		<h2 class='display-5 pb-3'>Los datos han sido guardados con exito.</h2>    
+		<p><a href='../index.html' class='btn btn-primary'>Volver al inicio</a></p>
+		</div>
+	</div>
+</div>
+";
+   
 ?>    
+
 </body>    
 
 </html>   
